@@ -8,10 +8,15 @@
     --logo-background: #ebe4d2;
   }
 
-  body {
+  /* CSS Reset */
+  * {
     margin:0;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  body {
+    text-align: center;
   }
 
   #navbar {
@@ -30,7 +35,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
-    align-content: flex-end;
     justify-content: space-around; 
   }
 
@@ -55,7 +59,6 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-
   }
 
   h1,h2 {
@@ -65,6 +68,11 @@
   h1 {
     font-size: 3.6em;
     margin-bottom: 0.3em;
+  }
+
+  h2 {
+    color: var(--welcome-bg);
+    font-size: 2.6em;
   }
 
   p {
@@ -78,16 +86,43 @@
 
   #projects{
     margin: 0;
-    padding-top: 2em;
-    padding-bottom: 2em;
     background-color: var(--logo-background);
-    
+    padding-top: 4em;
   }
 
-  .project-tile img{
+  .project-links {
+    padding: 2em;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 36px;
+  }
+
+  .project-tile {
     width: 250px;
+    height: 326px;
   }
 
+  img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-tile .text{
+    width: 250px;
+    background-color: var(--welcome-bg);
+    color: var(--navbar-text);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+  }
+
+  
   #contact {
     background-color: var(--welcome-bg);
     font-family: 'Montserrat', sans-serif;
@@ -96,14 +131,24 @@
     padding-bottom: 2em;
   }
 
-  #contact a {
+  a {
+    margin: 0;
     color: var(--navbar-text);
     text-decoration: none;
   }
 
-  #contact a:hover {
+   a:hover {
     color: var(--navbar-text);
     text-decoration: underline;
+  }
+
+  .social {
+    padding: 1em;
+    color: var(--navbar-text);
+  }
+
+  .social i {
+    padding: 0 0.2em;
   }
 
   @media (max-width: 768px) {
