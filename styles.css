@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+    --navbar-bg:#af1f24;
+    --navbar-text: whitesmoke;
+    --welcome-bg: #353535;
+    --logo-background: #ebe4d2;
+  }
+
+  body {
+    margin:0;
+    text-align: center;
+
+  }
+
+  #navbar {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 2em;
+    margin: 0;
+    padding: 1em;
+    background-color: var(--navbar-bg);
+    
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: space-around; 
+  }
+
+  .nav-link {   
+    color: var(--navbar-text);
+    text-decoration: none;
+  }
+
+  .nav-link:hover {   
+    color: var(--navbar-text);
+    text-decoration: underline;
+  }
+
+
+  #welcome-section {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--welcome-bg);
+    color: var(--navbar-text);
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+  }
+
+  h1,h2 {
+    font-family: 'Belanosima', sans-serif;
+  }
+
+  h1 {
+    font-size: 3.6em;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--navbar-bg);
+    font-size: 2em;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: 0;
+  }
+
+  #projects{
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--logo-background);
+    
+  }
+
+  .project-tile img{
+    width: 250px;
+  }
+
+  #contact {
+    background-color: var(--welcome-bg);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  #contact a {
+    color: var(--navbar-text);
+    text-decoration: none;
+  }
+
+  #contact a:hover {
+    color: var(--navbar-text);
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    #navbar {
+      font-size: 1em;
+    }
+  
+  }
