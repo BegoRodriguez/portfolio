@@ -91,7 +91,7 @@
   }
 
   .project-links {
-    margin: 1em 2em;
+    margin: 0 2em;
     padding: 2em;
     display:flex;
     flex-wrap: wrap;
@@ -103,6 +103,7 @@
   .project-tile {
     width: 250px;
     height: 326px;
+    background-color: var(--welcome-bg);
   }
 
   img{
@@ -115,7 +116,6 @@
 
   .project-tile .text{
     width: 250px;
-    background-color: var(--welcome-bg);
     color: var(--navbar-text);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
