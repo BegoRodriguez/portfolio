@@ -5,7 +5,8 @@
     --navbar-bg:#af1f24;
     --navbar-text: whitesmoke;
     --welcome-bg: #353535;
-    --logo-background: #ebe4d2;
+    --logo-background: black;
+    --light-grey:  #b4b4b4;
   }
 
   /* CSS Reset */
@@ -17,13 +18,15 @@
 
   body {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
   }
 
   #navbar {
     font-family: 'Belanosima', sans-serif;
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0;
-    padding: 1em;
+    padding: 1rem;
     background-color: var(--navbar-bg);
     
     display: flex;
@@ -48,7 +51,6 @@
     text-decoration: underline;
   }
 
-
   #welcome-section {
     height: 100vh;
     width: 100%;
@@ -61,24 +63,23 @@
     justify-content: center;
   }
 
-  h1,h2 {
-    font-family: 'Belanosima', sans-serif;
-  }
-
   h1 {
-    font-size: 3.6em;
-    margin-bottom: 0.3em;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 3.6rem;
+    margin-bottom: 0.3rem;
   }
 
   h2 {
-    color: var(--welcome-bg);
-    font-size: 2.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--navbar-text);
+    padding-bottom: 1rem;
   }
 
   p {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--navbar-bg);
-    font-size: 2em;
+    color: var(--light-grey);
+    font-size: 2rem;
     font-weight: 800;
     font-style: italic;
     margin-top: 0;
@@ -120,16 +121,16 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin: 0;
-    padding: 1em;
+    padding: 1rem;
   }
 
   
   #contact {
     background-color: var(--welcome-bg);
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
   }
 
   a {
@@ -138,13 +139,13 @@
     text-decoration: none;
   }
 
-   a:hover {
+   a:hover{
     color: var(--navbar-text);
     text-decoration: underline;
   }
 
   .social {
-    padding: 1em;
+    padding: 2rem;
     color: var(--navbar-text);
   }
 
@@ -154,7 +155,7 @@
 
   @media (max-width: 768px) {
     #navbar {
-      font-size: 1em;
+      font-size: 1rem;
     }
   
   }
